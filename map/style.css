@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #ced9de, #cfc7fa, #e2c6ee, #efc8dd, #d7e9db);
+	  background-size: 400% 400%;
+	  animation: gradient 1s alternate infinite;
+    overflow: hidden;
+  }
+
+  
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+circle{position: fixed; z-index: 99;}
+  svg {
+    width: 100vw;
+    height:90vh;
+  }
+  path {
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-width: 2px;
+  }
+  path:hover {
+    fill: black;
+    stroke: white;
+    stroke-width: 3px;
+    z-index: 98;
+  }
+
+  .mapView{position:absolute; width:25vw; height: 30vh; background-color: transparent; outline: 5px solid white; bottom:0px; left:0px;}
+p{font-size: 20rem; position: fixed; top:2rem; left:2rem;}
